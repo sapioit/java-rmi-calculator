@@ -12,4 +12,4 @@ public interface Interface extends Remote {
 	public double power(double a, double b) throws RemoteException;
 	public double factorial(double a) throws RemoteException;
 	public double sqareroot(double a) throws RemoteException;
-}
+} 
