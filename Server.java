@@ -5,8 +5,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
  
-public class Server 
-    implements Interface {
+public class Server implements Interface {
  
     public Server() throws RemoteException {
     	/**/
@@ -32,7 +31,7 @@ public class Server
     public double power(double a, double b) throws RemoteException {
         return Math.pow(a, b);
     }
-    public double factorial(double a) throws RemoteException {
+    public double factorial(int a) throws RemoteException {
         double result=1;
         for(int i=1;i<=a;i++)
             result *= (double)i;
