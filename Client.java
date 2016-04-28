@@ -118,7 +118,7 @@ public class Client {
                         break;
                     }
                     case '7':{
-                        a = obj.factorial(a); 
+                        a = obj.factorial(a.intValue()); 
                         break;
                     }
                     case '8':{
