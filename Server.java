@@ -27,7 +27,7 @@ public class Server implements Interface {
     }
     public double invert(double a) throws RemoteException {
         if(a<0)
-            return "Infinity... squared!";
+            throw new IllegalArgumentException("One cannot simply divide by 0...");
 
         return 1/a;
     }
