@@ -26,6 +26,9 @@ public class Server implements Interface {
         return a/b;
     }
     public double invert(double a) throws RemoteException {
+        if(a<0)
+            return "Infinity... squared!";
+
         return 1/a;
     }
     public double power(double a, double b) throws RemoteException {
